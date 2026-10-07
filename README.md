@@ -26,16 +26,10 @@ If you already added looot to Claude Desktop, use "Import from Claude" on the sa
 
 ## Junie
 
-Open Settings | Tools | Junie | MCP Settings and add the same JSON. Junie also reads `.junie/mcp/mcp.json` in the project.
+Open Settings | Tools | Junie | MCP Settings and add the same JSON.
 
 ## Sign-in
 
-looot's server uses OAuth in the browser. The JetBrains docs do not describe OAuth for remote servers. If the IDE does not open a sign-in window, create an API key at https://looot.ai and add it as a header:
-
-```json
-{ "mcpServers": { "looot": { "url": "https://api.looot.ai/mcp", "headers": { "Authorization": "Bearer <your key>" } } } }
-```
-
-Not tested by us in a JetBrains IDE yet, so check the sign-in step on your version.
+looot's server uses OAuth in the browser. The JetBrains docs do not say whether remote servers support OAuth, and we have not tested this in a JetBrains IDE yet. If the sign-in window does not open, contact https://looot.ai/contact.
 
 [looot.ai](https://looot.ai) | [Docs](https://docs.looot.ai) | [Support](https://looot.ai/contact)
