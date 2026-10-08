@@ -1,4 +1,8 @@
+<p align="center"><img src="assets/hero.png" alt="looot-jetbrains: looot MCP for JetBrains AI Assistant" width="100%"></p>
+
 # looot for JetBrains IDEs
+
+[![License](https://img.shields.io/github/license/loootai/looot-jetbrains)](LICENSE) [![Docs](https://img.shields.io/badge/docs-docs.looot.ai-12A06A)](https://docs.looot.ai)
 
 looot gives an AI agent one key and one prepaid balance for 2,500+ data API endpoints from 90+ providers: work emails, phone numbers, company and people search, Google results, web pages, news, LinkedIn profiles, local businesses. The agent sees the price before it runs, and a failed call costs nothing. Top up from $5.
 
