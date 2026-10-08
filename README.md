@@ -2,6 +2,14 @@
 
 looot gives an AI agent one key and one prepaid balance for 2,500+ data API endpoints from 90+ providers: work emails, phone numbers, company and people search, Google results, web pages, news, LinkedIn profiles, local businesses. The agent sees the price before it runs, and a failed call costs nothing. Top up from $5.
 
+## Install for agents
+
+```bash
+claude mcp add --transport http looot https://api.looot.ai/mcp
+```
+
+See also: [awesome-looot-use-cases](https://github.com/loootai/awesome-looot-use-cases) (copy-paste recipes) and [awesome-gtm](https://github.com/loootai/awesome-gtm) (open-source GTM tools).
+
 JetBrains has no plugin API for registering an external MCP server, and no marketplace listing for one. The plugin extension points in the IDE expose IDE tools as an MCP server, which is the opposite direction. So there is no looot plugin. Setup is a JSON paste, and it works in every IDE that has AI Assistant 2026.1 or newer (IntelliJ IDEA, PyCharm, WebStorm, GoLand, Rider and the rest).
 
 ## AI Assistant
