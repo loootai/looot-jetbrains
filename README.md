@@ -38,7 +38,33 @@ If you already added looot to Claude Desktop, use "Import from Claude" on the sa
 
 ## Junie
 
-Open Settings | Tools | Junie | MCP Settings and add the same JSON.
+Junie searches the official MCP registry, and looot is listed there as `ai.looot/looot`. In the Junie CLI, run `/mcp`, press Ctrl+A and search for looot, or ask the Installation Assistant to add it.
+
+To add it by hand, use Settings | Tools | Junie | MCP Settings, or put the same JSON in one of these files:
+
+- `.junie/mcp/mcp.json` in the project (shared with the team if you commit it, so keep API keys out of it)
+- `~/.junie/mcp/mcp.json` for every project on your machine
+
+## Project file
+
+Settings | Tools | MCP Server | Project Clients Auto-Configuration only configures external clients to use the IDE's own MCP server. It does not add looot. Use the AI Assistant or Junie steps above.
+
+## Agent token instead of browser sign-in
+
+If the browser sign-in does not suit your setup, create an agent token in the looot dashboard and send it as a header:
+
+```json
+{
+  "mcpServers": {
+    "looot": {
+      "url": "https://api.looot.ai/mcp",
+      "headers": { "Authorization": "Bearer YOUR_LOOOT_TOKEN" }
+    }
+  }
+}
+```
+
+Keep the token out of version control. Headers are untested here in a JetBrains IDE.
 
 ## Sign-in
 
