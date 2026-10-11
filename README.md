@@ -45,7 +45,7 @@ To add it by hand, use Settings | Tools | Junie | MCP Settings, or put the same 
 - `.junie/mcp/mcp.json` in the project (shared with the team if you commit it, so keep API keys out of it)
 - `~/.junie/mcp/mcp.json` for every project on your machine
 
-## Project file
+## Project Clients Auto-Configuration
 
 Settings | Tools | MCP Server | Project Clients Auto-Configuration only configures external clients to use the IDE's own MCP server. It does not add looot. Use the AI Assistant or Junie steps above.
 
